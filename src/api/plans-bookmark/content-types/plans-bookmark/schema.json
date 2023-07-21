@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plans_bookmarks",
+  "info": {
+    "singularName": "plans-bookmark",
+    "pluralName": "plans-bookmarks",
+    "displayName": "plans_bookmark"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "type": "biginteger"
+    },
+    "plan_id": {
+      "type": "biginteger"
+    }
+  }
+}

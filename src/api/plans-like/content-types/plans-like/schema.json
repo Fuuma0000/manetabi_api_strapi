@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plans_likes",
+  "info": {
+    "singularName": "plans-like",
+    "pluralName": "plans-likes",
+    "displayName": "plans_like"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "type": "biginteger"
+    },
+    "plan_id": {
+      "type": "biginteger"
+    }
+  }
+}

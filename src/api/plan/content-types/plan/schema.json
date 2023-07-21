@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plans",
+  "info": {
+    "singularName": "plan",
+    "pluralName": "plans",
+    "displayName": "plan",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "type": "biginteger",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "thumbnail_path": {
+      "type": "text"
+    },
+    "cost": {
+      "type": "integer"
+    },
+    "location_id": {
+      "type": "biginteger"
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "is_public": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

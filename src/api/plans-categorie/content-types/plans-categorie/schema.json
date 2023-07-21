@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plans_categories",
+  "info": {
+    "singularName": "plans-categorie",
+    "pluralName": "plans-categories",
+    "displayName": "plans_categorie"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "plan_id": {
+      "type": "biginteger"
+    },
+    "category_id": {
+      "type": "biginteger"
+    }
+  }
+}

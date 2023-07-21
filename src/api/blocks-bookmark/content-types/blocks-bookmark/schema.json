@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blocks_bookmarks",
+  "info": {
+    "singularName": "blocks-bookmark",
+    "pluralName": "blocks-bookmarks",
+    "displayName": "blocks_bookmark"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "type": "biginteger"
+    },
+    "block_id": {
+      "type": "biginteger"
+    }
+  }
+}

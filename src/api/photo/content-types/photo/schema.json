@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "photoes",
+  "info": {
+    "singularName": "photo",
+    "pluralName": "photoes",
+    "displayName": "photo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "block_id": {
+      "type": "biginteger"
+    },
+    "photo_path": {
+      "type": "text"
+    }
+  }
+}

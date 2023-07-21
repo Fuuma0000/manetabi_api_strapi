@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plans_locations",
+  "info": {
+    "singularName": "plans-location",
+    "pluralName": "plans-locations",
+    "displayName": "plans_location"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "plan_id": {
+      "type": "biginteger"
+    },
+    "location_id": {
+      "type": "biginteger"
+    }
+  }
+}

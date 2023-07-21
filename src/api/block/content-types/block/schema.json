@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blocks",
+  "info": {
+    "singularName": "block",
+    "pluralName": "blocks",
+    "displayName": "block",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "plan_id": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "block_name": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "start_date": {
+      "type": "datetime"
+    },
+    "end_date": {
+      "type": "datetime"
+    },
+    "memo": {
+      "type": "richtext"
+    },
+    "cost": {
+      "type": "integer"
+    },
+    "address": {
+      "type": "string"
+    },
+    "details": {
+      "type": "richtext"
+    }
+  }
+}
