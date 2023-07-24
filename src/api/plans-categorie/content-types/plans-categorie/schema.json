@@ -4,7 +4,8 @@
   "info": {
     "singularName": "plans-categorie",
     "pluralName": "plans-categories",
-    "displayName": "plans_categorie"
+    "displayName": "plans_categorie",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,18 @@
     },
     "category_id": {
       "type": "biginteger"
+    },
+    "plan": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::plan.plan",
+      "inversedBy": "plans_categories"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category",
+      "mappedBy": "plans_categorie"
     }
   }
 }

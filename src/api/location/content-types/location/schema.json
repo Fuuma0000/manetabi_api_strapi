@@ -14,6 +14,12 @@
   "attributes": {
     "location_name": {
       "type": "string"
+    },
+    "plans_location": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::plans-location.plans-location",
+      "inversedBy": "locations"
     }
   }
 }

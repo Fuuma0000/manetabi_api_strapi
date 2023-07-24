@@ -16,6 +16,18 @@
     },
     "block_id": {
       "type": "biginteger"
+    },
+    "app_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::app-user.app-user",
+      "inversedBy": "blocks_bookmarks"
+    },
+    "block": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::block.block",
+      "inversedBy": "blocks_bookmarks"
     }
   }
 }

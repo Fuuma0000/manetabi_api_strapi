@@ -17,6 +17,12 @@
     },
     "photo_path": {
       "type": "text"
+    },
+    "block": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::block.block",
+      "inversedBy": "photos"
     }
   }
 }

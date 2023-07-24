@@ -39,6 +39,24 @@
     },
     "details": {
       "type": "richtext"
+    },
+    "plan": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::plan.plan",
+      "inversedBy": "blocks"
+    },
+    "photos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::photo.photo",
+      "mappedBy": "block"
+    },
+    "blocks_bookmarks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blocks-bookmark.blocks-bookmark",
+      "mappedBy": "block"
     }
   }
 }

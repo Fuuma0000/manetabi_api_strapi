@@ -42,6 +42,48 @@
       "type": "boolean",
       "default": false,
       "required": true
+    },
+    "app_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::app-user.app-user",
+      "inversedBy": "plans"
+    },
+    "blocks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::block.block",
+      "mappedBy": "plan"
+    },
+    "plans_bookmarks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::plans-bookmark.plans-bookmark",
+      "mappedBy": "plan"
+    },
+    "groups": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::group.group",
+      "mappedBy": "plan"
+    },
+    "plans_locations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::plans-location.plans-location",
+      "mappedBy": "plan"
+    },
+    "plans_likes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::plans-like.plans-like",
+      "mappedBy": "plan"
+    },
+    "plans_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::plans-categorie.plans-categorie",
+      "mappedBy": "plan"
     }
   }
 }

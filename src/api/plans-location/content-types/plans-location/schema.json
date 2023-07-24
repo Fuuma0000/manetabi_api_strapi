@@ -4,7 +4,8 @@
   "info": {
     "singularName": "plans-location",
     "pluralName": "plans-locations",
-    "displayName": "plans_location"
+    "displayName": "plans_location",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,18 @@
     },
     "location_id": {
       "type": "biginteger"
+    },
+    "plan": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::plan.plan",
+      "inversedBy": "plans_locations"
+    },
+    "locations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::location.location",
+      "mappedBy": "plans_location"
     }
   }
 }

@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "app_users",
+  "info": {
+    "singularName": "app-user",
+    "pluralName": "app-users",
+    "displayName": "AppUser",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "password": {
+      "type": "password"
+    },
+    "profile_image_path": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "plans": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::plan.plan",
+      "mappedBy": "app_user"
+    },
+    "groups": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::group.group",
+      "mappedBy": "app_user"
+    },
+    "plans_bookmarks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::plans-bookmark.plans-bookmark",
+      "mappedBy": "app_user"
+    },
+    "blocks_bookmarks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blocks-bookmark.blocks-bookmark",
+      "mappedBy": "app_user"
+    },
+    "plans_likes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::plans-like.plans-like",
+      "mappedBy": "app_user"
+    }
+  }
+}

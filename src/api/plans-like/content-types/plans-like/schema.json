@@ -16,6 +16,18 @@
     },
     "plan_id": {
       "type": "biginteger"
+    },
+    "app_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::app-user.app-user",
+      "inversedBy": "plans_likes"
+    },
+    "plan": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::plan.plan",
+      "inversedBy": "plans_likes"
     }
   }
 }
